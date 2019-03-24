@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a { color:red; transition:0.5s; }
+        a:hover { color:blue; }
+
+        .topbar-container{
+            background-color: #222222;
+        }
+        .topbar-wrap{
+            width:1200px;
+            height:60px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .logo{
+            height:50px;
+            width: 50px;
+            float: left;
+            margin:20px 5px;
+
+        }
+        .nav{
+            float: left;
+            height: 60px;;
+        }
+        .nav li{
+            float: left;
+            width: 100px;
+            margin:0 10px;
+            list-style: none;
+        }
+        .nav a{
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            display: block;
+            font-size: 18px;
+            color: #dadada;
+            text-align: center;
+            line-height: 60px;
+
+        }
+        .nav a:hover{
+            background: #333;
+        }
+
+    </style>
+</head>
+<body marginwidth="0" topmargin="0">
+<div class="shortcut">
+    <div class="layout">
+        <div class="s-sub">
+            <ul>
+                <li><a href="https://www.vmall.com" onclick = "pushHeaderMsg('首页','https://www.vmall.com')">首页</a></li>
+                <li><a href="http://consumer.huawei.com/cn/" target="_blank" onclick = "pushHeaderMsg('华为官网','http://consumer.huawei.com/cn/')">华为官网</a></li>
+                <li><a href="http://www.honor.cn/" target="_blank" onclick = "pushHeaderMsg('荣耀官网','http://www.honor.cn/')">荣耀官网</a></li>
+                <li><a href="http://club.huawei.com" target="_blank" onclick = "pushHeaderMsg('花粉俱乐部','http://club.huawei.com')">花粉俱乐部</a></li>
+                <li><a href="javascript:;" rel="nofollow" onclick = "pushHeaderMsgPriority('V码(优购码)','https://www.vmall.com/priority')">V码(优购码)</a></li>
+                <li><a href="/company" target="_blank" onclick="pushHeaderMsg('企业购','/company')">企业购</a></li>
+                <li class="s-hwep hide" id="li-enterprise-preferential"></li>
+                <li><a href="javascript:;" onclick="showSelectRegion();pushHeaderMsg('Select Region','')">Select Region</a></li>
+                <li>
+                    <div class="s-dropdown">
+                        <div class="h">
+                            <a class="icon-dropdown">更多精彩</a>
+                        </div>
+                        <div class="b" >
+                            <div class="dropdown-more w-119">
+                                <dl>
+                                    <dt><a href="http://emui.huawei.com/cn/" target="_blank" onclick = "pushHeaderMsg('EMUI','http://emui.huawei.com/cn/')">EMUI</a></dt>
+                                    <dt><a href="http://appstore.huawei.com/" target="_blank" onclick = "pushHeaderMsg('应用市场','http://appstore.huawei.com/')">应用市场</a></dt>
+                                    <dt><a href="http://cloud.huawei.com" target="_blank" onclick = "pushHeaderMsg('华为终端云空间','http://cloud.huawei.com')">华为终端云空间</a></dt>
+                                    <dt><a href="http://developer.huawei.com/" target="_blank" onclick = "pushHeaderMsg('开发者联盟','http://developer.huawei.com/')">开发者联盟</a></dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

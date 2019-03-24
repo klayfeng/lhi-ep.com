@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#body-divid{
+    padding-left: 30px;
+    width:1000px;
+    height: auto;
+    margin: 0px auto;
+}
+#zsd11_div1{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+#zsd13_div1{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+#zsd19_div2{
+    width: 350px;
+    height: 30px;
+    background-color: #bababa;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    z-index: 100;
+    border-radius: 30px;
+}
+#zsd19_div5{
+    padding-top: 5px;
+    height: auto;
+    width: 270px;
+    margin: 0 auto;
+}
+#zsd19_div3{
+    float: left;
+}
+#zsd19_div4{
+    float: left;
+}
+#zsd22_div6{
+    width: 200px;
+    height: 100px;
+    background-color: #bababa;
+    overflow-y:auto;            /*超过则添加滚动条*/
+    overflow-x:auto;                /*超过则添加滚动条*/
+}
+#zsd22_div7{
+    width: 200px;
+    height: 100px;
+    background-color: #bababa;
+    overflow-y:auto;            /*超过则添加滚动条*/
+    overflow-x:auto;                /*超过则添加滚动条*/
+}
+#zsd24_div1{
+     width: 300px;
+     height: 50px;
+     background-color: #bababa;
+     padding-top: 25px;
+ }
+#zsd24_p1{
+    width: 200px;
+    height: 20px;
+    background-color: beige;
+    margin: 0px auto;
+    padding-left: 25px;
+}
+#zsd24_div2{
+     width: 300px;
+     height: 50px;
+     background-color: #bababa;
+     padding-top: 25px;
+ }
+#zsd24_p2{
+    width: 200px;
+    height: 20px;
+    background-color: beige;
+    margin: 0px auto;
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

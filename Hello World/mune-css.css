@@ -1,0 +1,797 @@
+#body-id{
+    width: 75%;
+    margin: 0px auto;
+}
+#zsd1-h1-id{
+    margin-top: 100px;
+}
+#zsd2-p1-id{
+    width: max-content;
+    padding: 10px;
+    background-color: cadetblue;
+}
+#zsd2-p2-id{
+    padding: 100px;
+    background-image:url("image/zsd14-1.gif");
+    background-repeat: no-repeat;
+}
+#zsd2-p3-id{
+    background-image: url("image/LOGO2.png");
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#zsd2-p4-id{
+    background-image: url("image/LOGO2.png");
+    padding: 50px;
+    background-repeat: repeat;
+}
+#zsd2-p5-id{
+    background-image: url("image/杂享汇.png");
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#zsd2-p6-id{
+    background-image: url("image/zsd14-1.gif");
+    background-size: 100px 100px;
+    width: 300px;
+    padding: 90px;
+}
+
+#zsd3-p1-id{
+    color: #bb652d;
+}
+#zsd3-p2-id{
+    text-align: center;
+}
+#zsd3-div1-id p{
+    text-indent: 200px;
+}
+#zsd3-p3-id{
+    text-transform: capitalize;
+}
+#zsd3-p4-id{
+    text-transform: lowercase;
+}
+#zsd3-p5-id{
+    text-transform: uppercase;
+}
+#zsd3-p6-id{
+    line-height: 100px;
+}
+#zsd3-p7-id{
+    text-shadow: 5px 5px 3px #253e3e;
+}
+#zsd3-p8-id{
+    width: 200px;
+    text-wrap: normal;
+}
+#zsd4-p1-id{
+    font-size: 30px;
+}
+#zsd4-p2-id{
+    font-family: 宋体;
+}
+@font-face {
+    font-family: myfont;                    /*上传字体*/
+    src: url("");
+}
+div{
+    font-family: myfont;                     /*上传字体*/
+}
+#zsd5-div1-id a:link{
+    color: #5f9ea0;
+}
+#zsd5-div1-id a:hover{
+    color: #bb652d;
+}
+#zsd5-div1-id a:active{
+    color: #222222;
+}
+#zsd5-div1-id a:visited{
+    color: #bababa;
+}
+#zsd5-a1-id{
+    text-decoration: none;                                /*链接去掉下划线*/
+}
+#zsd5-div2-id a:link{
+    color: #343a35;
+    text-decoration: none;
+}
+#zsd5-div2-id a:hover{
+    background-color: #bababa;
+}
+#zsd5-div2-id a:visited{
+    color: #bababa;
+}
+#zsd6-ul1-id{
+    list-style-image: url("image/LOGO97.png");
+}
+#zsd6-ul2-id{
+    list-style-type: circle;
+}
+#zsd6-ul3-id{
+    list-style-position: inside;
+}
+
+#zsd7-tb1-id{
+    border-collapse: collapse;                            /*折叠边框*/
+    width: 500px;                                              /*整体宽度*/
+}
+#zsd7-tb1-id th,#zsd7-tb1-id td{
+    border: 1px solid #222222;                             /*边框宽度和颜色*/
+    padding: 10px;                                             /*内边距*/
+    text-align: center;                                       /*文字对齐位置*/
+}
+#zsd7-tb1-id th{
+    color: white;                                            /*文字颜色*/
+    background-color: cadetblue;                             /*背景颜色*/
+    text-align: center;
+}
+.zsd7-tr1-class{                                               /*隔行填充背景颜色*/
+    background-color: #bababa;
+}
+
+#zsd8-p1-id{
+    outline-color: cadetblue;                                 /*轮廓的颜色*/
+    outline-style: double;                                    /*轮廓的类型*/
+    outline-width: 10px;                                        /*轮廓的边缘宽度*/
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+#zsd9-div1-id{
+    background-color: #ed8039;
+    width: 100px;
+    height: 100px;
+    position: relative;                 /*定位：relative(相对布局)、absolute(绝对)、fixed（固定）、static(静态)*/
+    z-index: 1;                                            /*元素的堆叠顺序：大的在上面 */
+}
+#zsd9-div2-id{
+    background-color: #343a35;
+    width: 100px;
+    height: 100px;
+    top: -40px;                                                 /*元素向上的偏移量*/
+    left: 40px;                                                  /*元素向右的偏移量*/
+    position: relative;
+    z-index: 3;
+}
+#zsd9-div3-id{
+    background-color: #5f9ea0;
+    width: 100px;
+    height: 100px;
+    top: -80px;
+    left: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+#zsd9-table1-id{
+    background-color: cadetblue;
+    position: fixed;
+    right: 10px;
+    top: 300px;
+    border-collapse: collapse;
+    z-index: 20;
+}
+#zsd9-table1-id img{
+    width: 100px;
+}
+#zsd9-table1-id th{
+    background-color: #ed8039;
+    padding: 10px;
+    border: 3px solid cadetblue;
+}
+#zsd9-table1-id td{
+    text-align: center;
+    text-shadow: 0px 0px 4px white;
+    padding: 10px;
+    border: 1px solid white;
+}
+#zsd9-table1-id a{
+    text-decoration: none;
+}
+#zsd9-table1-id a:link{
+    color: white;
+}
+#zsd9-table1-id a:hover{
+    color: #ed8039;
+}
+
+#zsd10-div1-id{
+    width: 350px;
+    height: 250px;
+    background-color: #bababa;
+}
+#zsd10-div2-id{
+    width: 100px;
+    height: 150px;
+    background-color: cadetblue;
+    float: left;                                             /*向左浮动*/
+}
+#zsd10-div3-id{
+    width: 150px;
+    height: 100px;
+    background-color: #343a35;
+    float: left;                                             /*向左浮动*/
+}
+#zsd10-div4-id{
+    width: 150px;
+    height: 100px;
+    background-color: #ed8039;
+    float: left;                                             /*向左浮动*/
+}
+#zsd10-p2-id{
+    clear: both;                                             /*去掉浮动*/
+}
+#zsd11-div1-id{                                              /*div居中显示*/
+    width:800px;
+    height:400px;
+    position:relative;
+    left:50%;
+    margin-left: -370px;
+    margin-top: 0px;
+}
+#zsd11-div1-id img{
+    width: 200px;
+    height: 100px;
+}
+#zsd11-div1-id li{
+    list-style: none;
+}
+#zsd11-div1-id ul{
+    float: left;
+}
+
+#zsd12-div1-id{
+    width: 80px;
+    border: 1px solid #ed8039;
+    padding-left: 50px;                                /*左边距*/
+    padding-right: 50px;                                /*右边距*/
+    padding-top: 50px;                                /*顶边距*/
+    padding-bottom: 50px;                                /*下边距*/
+    padding: 50px;                                     /*内边距*/
+}
+#zsd12-div2-id{
+    border: 5px solid #ed8039;                         /*边框宽度和颜色*/
+    width: 80px;
+    padding: 50px;
+    text-align: center;
+    border-top-style: solid;                            /*顶部边框类型*/
+    border-bottom-style: double;                          /*底部边框类型*/
+    border-left-style: dotted;                            /*左边边框类型*/
+    border-right-style: dashed;                            /*右边边框类型*/
+    border-bottom-width: 20px;                           /*底边边框宽度*/
+    border-left-width: 10px;                              /*左边边框宽度*/
+    border-top-color: cadetblue;                          /*顶部边框颜色*/
+    border-right-color: #bababa;                          /*右边边框颜色*/
+    background-color: #fcf6ff;                            /*背景颜色*/
+    border-radius:15px;                                    /*圆角边框*/
+    box-shadow: 5px 5px 5px #bababa;                      /*边框阴影*/
+    border-image: none;                                    /*边框图片*/
+}
+#zsd12-div3-id{
+    margin: 50px;                                               /*外边距*/
+    margin-left: 50px;                                        /*左外边距*/
+    margin-top: 50px;                                           /*顶外边距*/
+    width: 50px;
+    border: 1px solid #ed8039;
+}
+#zsd12-div4-id{
+    margin: 50px;
+}
+#zsd12-div5-id{
+    border: 5px solid #ed8039;
+    width: 150px;
+}
+#zsd12-div6-id{
+    padding: 30px;
+}
+#zsd12-div7-id{
+    color: #343a35;
+    text-align: center;
+    background-color: #5f9ea0;
+}
+
+#zsd14-p1-id{
+    max-width: 200px;                             /*最大宽度*/
+    line-height: normal;                        /*行高*/
+}
+#zsd14-p2-id{
+    width: 150px;                                  /*宽度*/
+    line-height: 200%;
+    max-height: 250px;                            /*最大高度*/
+}
+#zsd14-p3-id{
+    max-width: 150px;
+    line-height: 50%;
+}
+
+#zsd15-p1-id{
+    cursor: cell;
+}
+#zsd15-ul1-id li{
+    display: inline;
+}
+#zsd15-p2-id{
+    visibility: visible;
+}
+
+#zsd16-ul1-id{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    background-color: #bababa;
+    width: 90px;
+    text-align: center;
+}
+#zsd16-ul1-id a{
+    display: block;                                 /*以块的形式*/
+    text-decoration: none;
+    line-height: 30px;                                /*链接的高*/
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#zsd16-ul1-id a:link{
+    color: #343a35;
+}
+#zsd16-ul1-id a:hover{
+    background-color: #f0f0f0;
+}
+#zsd16-li1-id{
+    padding-top: 15px;
+}
+#zsd16-li2-id{
+    padding-top: 10px;
+}
+#zsd16-li3-id{
+    padding-top: 10px;
+}
+#zsd16-li4-id{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#zsd16-div1-id{                                          /*顶部导航栏*/
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 100%;
+    height: 50px;
+    background-color: #222222;
+    position: fixed;
+    z-index: 30;
+    top: 0px;
+}
+#zsd16-div2-id{                                            /*文字和图片区域*/
+    height: 50px;
+    margin: 0 auto;
+    width:80%;
+    overflow: hidden;
+}
+#zsd16-img1-id{                                              /*图片*/
+    float: left;
+    height: 30px;
+    margin: 10px 0px;
+}
+#zsd16-ul2-id{                                               /*菜单*/
+    height: 50px;
+    float: right;
+    right: 0px;
+}
+#zsd16-ul2-id li{                                           /*菜单*/
+    float: left;
+    list-style-type: none;
+}
+#zsd16-ul2-id a{                                            /*菜单显示效果*/
+    margin-top: -16px;
+    padding-top: 13px;
+    color: #dadada;
+    text-decoration: none;
+    height: 50px;
+    width: 120px;
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+}
+#zsd16-ul2-id a:hover{                                       /*菜单点击效果*/
+    background-color: #343a35;                      /*顶部导航栏到此为止*/
+}
+#zsd17-div3-id{                                              /*最外层盒子*/
+    width: 778px;
+    height: 400px;
+    margin: 0px auto;
+}
+.zsd17-div1-id{                                              /*图片盒子*/
+    border: 2px solid #bababa;
+    box-shadow: 0px 0px 10px #bababa;
+    margin: 20px 20px;
+    width: auto;
+    height: auto;
+    float: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.zsd17-div1-id img{
+    opacity: 0.8;                                            /*图片透明度*/
+}
+.zsd17-div2-id{                                                /*文字说明盒子*/
+    font-family: 微软雅黑;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #343a35;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.zsd17-div2-id a{
+    text-decoration: none;
+    color: #f0f0ff;
+}
+.zsd17-div2-id a:hover{                                           /*文字悬停效果*/
+    color:white ;
+    transition: 0.5s;
+    text-shadow: 0px 0px 3px white;
+}
+.zsd17-div1-id img:hover{                                      /*图片悬停效果*/
+    box-shadow: 0px 0px 5px #343a35;
+}
+
+#zsd18-p1-id{
+    color: blue;
+}
+#zsd18-p2-id,#zsd18-p3-id{
+    color: blue;
+}
+.zsd18-div-id{
+    width: 100px;
+    height: 30px;
+    background-color: #5f9ea0;
+}
+a.zsd18-p4-id{
+    color: blue;
+}
+
+#zsd18-div2-id{
+    border: 1px solid #bababa;
+    float: left;
+}
+#zsd18-div3-id{
+    margin: 10px;
+    border: 1px solid #bababa;
+    float: left;
+}
+#zsd18-div4-id{
+    margin: 10px;
+    border: 1px solid #bababa;
+    float: left;
+}
+.zsd18-p5-id{
+    color: cadetblue;
+}
+.zsd18-p6-id{
+    font-size: 20px;
+}
+.zsd18-p5-id.zsd18-p6-id{
+    font-style: italic;
+}
+
+#zsd18-h1-id{
+    clear: both;
+}
+.zsd18-div5-id{
+    clear: both;
+}
+.zsd18-div6-id{
+    float: left;
+    border: 1px solid #bababa;
+}
+.zsd18-div7-id{
+    margin: 10px;
+    float: left;
+    border: 1px solid #bababa;
+}
+.zsd18-div8-id{
+    margin: 10px;
+    float: left;
+    border: 1px solid #bababa;
+}
+
+#zsd18-h2-id{
+    clear: both;
+}
+#zsd18-div9-id p strong i{                      /*后代选择器*/
+    color: cadetblue;
+}
+#zsd18-div10-id p>strong>i{                       /*子选择器*/
+    color: cadetblue;
+}
+#zsd18-div11-id li+li{                             /*兄弟选择器*/
+    color: cadetblue;
+    font-weight: bold;
+}
+.zsd19-div3-id{
+    border: 2px solid #bababa;
+    height: 150px;
+}
+.zsd19-h41-id{
+    float: left;
+    margin-right: 30px;
+}
+.zsd19-div1-id{
+    width: 100px;
+    height: 100px;
+    color: #ed8039;
+    background-color: cadetblue;
+    float: left;
+}
+
+#zsd19-div2-id{
+
+    width: 100px;
+    height: 100px;
+    color: #ed8039;
+    background-color: cadetblue;
+    float: left;
+    transform: translate(10px,10px);                         /* x坐标、y坐标各偏移了10px*/
+    -webkit-transform: translate(10px,10px);                 /*Chrome\safair\oprea*/
+    -moz-transform: translate(10px,10px);                  /*火狐浏览器*/
+    -ms-transform: translate(10px,10px);                     /*IE浏览器*/
+}
+#zsd19-div4-id{
+
+    width: 100px;
+    height: 100px;
+    color: #ed8039;
+    margin-left: 40px;
+    background-color: cadetblue;
+    float: left;
+    transform: rotate(90deg);                           /*绕着中心旋转了90度*/
+    -webkit-transform: rotate(90deg);             /*Chrome\safair\oprea*/
+    -moz-transform: rotate(90deg);               /*火狐浏览器*/
+    -ms-transform:rotate(90deg);                 /*IE浏览器*/
+}
+#zsd19-div5-id{
+
+    width: 100px;
+    height: 100px;
+    color: #ed8039;
+    margin-left: 80px;
+    background-color: cadetblue;
+    float: left;
+    transform: scale(2,1);                         /* x边拉伸2倍，y边拉伸1倍*/
+    -webkit-transform: scale(2,1);               /*Chrome\safair\oprea*/
+    -moz-transform: scale(1,2);                 /*火狐浏览器*/
+    -ms-transform:scale(1,2);                     /*IE浏览器*/
+}
+
+#zsd19-div6-id{
+
+    width: 100px;
+    height: 100px;
+    color: #ed8039;
+    margin-left: 80px;
+    background-color: cadetblue;
+    float: left;
+    transform: skew(15deg,0deg);                         /* x边歪斜15度，y边歪斜0度*/
+    -webkit-transform:skew(15deg,00deg);             /*Chrome\safair\oprea*/
+    -moz-transform: skew(15deg,0deg);                 /*火狐浏览器*/
+    -ms-transform:skew(15deg,0deg);                      /*IE浏览器*/
+}
+#zsd19-div7-id{
+
+    width: 100px;
+    height: 100px;
+    color: #ed8039;
+    margin-left: 40px;
+    background-color: cadetblue;
+    float: left;
+    transform:rotateX(50deg);                         /* 绕着x轴旋转50度*/
+    -webkit-transform:rotateX(50deg);             /*Chrome\safair\oprea*/
+    -moz-transform: rotateX(100deg);                  /*火狐浏览器*/
+    -ms-transform:rotateX(100deg);                      /*IE浏览器*/
+}
+
+#zsd20-div1-id{
+    width: auto;
+    height: 250px;
+}
+#zsd20-div2-id{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    -webkit-transition: width 2s,height 2s,-webkit-transform 2s;       /*高、宽、转换样式都有变化时长*/
+    -moz-transition: width 2s,height 2s,-moz-transform 2s;
+    -ms-transition: width 2s,height 2s,-ms-transform 2s;
+    -o-transition: width 2s,height 2s,-o-transform 2s;
+    transition: width 2s,height 2s,transform 2s;
+
+    -webkit-transition-delay: 1s;                                     /*延迟1s执行动画*/
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s ;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+#zsd20-div2-id:hover{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    -webkit-transform: rotate(360deg);                   /*旋转了360度*/
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+#zsd21-div2-id{
+    height: 400px;
+}
+#zsd21-div1-id{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    position: relative;
+    -webkit-animation: anim 5s infinite/*无限*/ alternate /*轮流*/;          /*animation设置动画*//*执行一个完整的动作为5秒*/
+    -o-animation: anim 5s infinite alternate;
+    animation: anim 5s infinite alternate;
+}
+
+@keyframes  anim{                                                           /*keyframes为关键帧*/
+    0%{
+        background: cadetblue;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background: cadetblue;
+        left: 400px;
+        top: 0px;
+        -webkit-transform: rotate(360deg);                   /*旋转了360度*/
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    50%{
+        background: #ed8039;
+        left: 400px;
+        top: 200px;
+        -webkit-transform: rotate(720deg);                   /*旋转了360度*/
+        -moz-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+    75%{
+        background: #ed8039;
+        left: 0px;
+        top: 200px;
+        -webkit-transform: rotate(1080deg);                   /*旋转了360度*/
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(1080deg);
+    }
+    100%{background: cadetblue;left: 0px;top: 0px}
+}
+@-webkit-keyframes  anim{
+    0%{
+        background: cadetblue;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background: cadetblue;
+        left: 400px;
+        top: 0px;
+        -webkit-transform: rotate(360deg);                   /*旋转了360度*/
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    50%{
+        background: #ed8039;
+        left: 400px;
+        top: 200px;
+        -webkit-transform: rotate(720deg);                   /*旋转了360度*/
+        -moz-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        -o-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+    75%{
+        background: #ed8039;
+        left: 0px;
+        top: 200px;
+        -webkit-transform: rotate(1080deg);                   /*旋转了360度*/
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(1080deg);
+    }
+    100%{background: cadetblue;left: 0px;top: 0px}
+}
+
+#zsd22-div-id{
+    column-count: 4;                                       /*分成四列*/
+    -webkit-column-count: 4;
+    column-gap: 50px;                                       /*间隙为50px*/
+    -webkit-column-gap: 50px;
+    column-rule: 5px outset #5f9ea0;                      /*分割线属性*/
+    -webkit-column-rule: 5px outset #5f9ea0;
+}
+
+#zsd23-div1-id{
+    -webkit-column-width: 250px;                         /*每列的宽度*/
+    -moz-column-width: 250px;
+    column-width: 250px;
+    -webkit-column-gap: 10px;                             /*间隙宽度*/
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}
+#zsd23-div1-id div{
+    width: 250px;
+    margin: 10px 0px;
+    border: 1px solid #f0f0f0;
+}
+#zsd23-div1-id img{
+    width: 250px;
+}
+#zsd23-div1-id p{
+    text-align: center;
+    font-size: small;
+}
+#zsd23-div1-id img:hover{
+    box-shadow: 0px 0px 5px #bababa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

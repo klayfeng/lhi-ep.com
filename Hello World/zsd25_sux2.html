@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="zsd25_input2">
+        <input type="button" value="确定" onclick="zsd25_fun2()">
+    </form>
+    <script>
+       function zsd25_fun2() {
+         var inputValue = document.getElementById("zsd25_input2").value;
+         if (inputValue == "hello"){
+             history.go(-1);        //-1时返回原来的页面
+          }else {
+             alert("输入错误");
+         }
+     }
+    </script>
+</body>
+</html>

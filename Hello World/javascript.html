@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript知识点演示</title>
+    <script src="myjavascript.js">
+    </script>
+    <link type="text/css" rel="stylesheet" href="jscss.css">
+</head>
+<body onload="zsd11_onLoad()">                   //网页加载事件
+<div id="body-divid">
+    <p id="js1">hello</p>
+    <script>
+        document.getElementById("js1").innerHTML="你好啊，我变了"
+    </script>
+
+    <script>
+        document.write("<h3>知识点一：JS变量和数据类型</h3>");
+        document.write("<h4>内容一：变量var</h4>");
+        document.write("<h4>内容二：数据类型</h4>");
+        document.write("字符串（String）、数字（Number）、布尔（Boolean）、数组（Array）、对象（Object）、空（null）、未定义、可以通过赋值null的方式清除变量<br/>");
+        var  zsd1_string= "hello";                        //字符串
+        var zsd1_i = 3;                                     //数字
+        var zsd1_flag = true;                              //布尔
+        var zsd1_arr1 = ["hello","jike","xueyuan",".com"];         //数组定义方式一
+        var zsd1_arr2 = new Array("hello","nihao","hangyu","chayige");  //数组定义方式二
+        var zsd1_arr3 = new Array();                                      //数组定义方式三（不规定长度，可一直定义）
+        zsd1_arr3[0] = 10;
+        zsd1_arr3[1] = 20;
+        zsd1_arr3[2] = 30;
+        zsd1_arr3[3] = 40;
+        var zsd1_a = null;                  //空值
+        var zsd1_b;                       //未定义
+        zsd1_b = 10;
+        document.write(zsd1_string);
+        document.write(zsd1_i+zsd1_i);
+        document.write(zsd1_flag);
+        document.write(zsd1_arr1[2]);
+        document.write(zsd1_arr2[2]);
+        document.write(zsd1_arr3[2]);
+        document.write(zsd1_a);
+        document.write(zsd1_b);
+    </script>
+
+    <script>
+        document.write("<h3>知识点二：JS语法-运算符</h3>");
+        document.write("<h4>内容一：算数运算符（+、-、*、/、%、++、--）</h4>");
+    </script>
+    <p>i = 20 , j = 10 , 问： </p>
+    <a>i+j=</a>
+    <a  id="zsd2_sumid"></a>
+    <button onclick="zsd2_sumh()">结果</button><br/>
+
+    <a>i -j=</a>
+    <a  id="zsd2_lessid"></a>
+    <button onclick="zsd2_less()">结果</button><br/>
+
+    <a>i *j=</a>
+    <a  id="zsd2_mulid"></a>
+    <button onclick="zsd2_mul()">结果</button><br/>
+
+    <a>i /j=</a>
+    <a  id="zsd2_exid"></a>
+    <button onclick="zsd2_ex()">结果</button><br/>
+
+    <a>i%j=</a>
+    <a  id="zsd2_yuid"></a>
+    <button onclick="zsd2_yu()">结果</button><br/>
+
+    <a>j = i++ ,j=</a>
+    <a  id="zsd2_dsumid"></a>
+    <button onclick="zsd2_dsum()">结果</button><br/>
+
+    <a>j = ++ i ,j=</a>
+    <a  id="zsd2_sumdid"></a>
+    <button onclick="zsd2_sumd()">结果</button><br/>
+
+    <script>
+        function zsd2_sumh() {
+            var zsd2_i1 = 20;
+            var zsd2_j1 = 10;
+            var zsd2_sum = zsd2_i1 + zsd2_j1;
+            document.getElementById("zsd2_sumid").innerHTML = zsd2_sum;
+        }
+
+        function zsd2_less() {
+            var zsd2_i2 = 20;
+            var zsd2_j2 = 10;
+            var zsd2_less = zsd2_i2 - zsd2_j2;
+            document.getElementById("zsd2_lessid").innerHTML = zsd2_less;
+        }
+
+        function zsd2_mul() {
+            var zsd2_i3 = 20;
+            var zsd2_j3 = 10;
+            var zsd2_mul = zsd2_i3 * zsd2_j3;
+            document.getElementById("zsd2_mulid").innerHTML = zsd2_mul;
+        }
+
+        function zsd2_ex() {
+            var zsd2_i4 = 20;
+            var zsd2_j4 = 10;
+            var zsd2_ex = zsd2_i4 / zsd2_j4;
+            document.getElementById("zsd2_exid").innerHTML = zsd2_ex;
+        }
+
+        function zsd2_yu() {
+            var zsd2_i5 = 20;
+            var zsd2_j5 = 10;
+            var zsd2_yu = zsd2_i5 % zsd2_j5;
+            document.getElementById("zsd2_yuid").innerHTML = zsd2_yu;
+        }
+
+        function zsd2_dsum() {
+            var zsd2_i6 = 20;
+            var zsd2_j6 = 10;
+            var zsd2_j6 = zsd2_i6++;
+            document.getElementById("zsd2_dsumid").innerHTML = zsd2_j6;
+        }
+
+        function zsd2_sumd() {
+            var zsd2_i7 = 20;
+            var zsd2_j7 = 10;
+            var zsd2_j7 = ++zsd2_i7;
+            document.getElementById("zsd2_sumdid").innerHTML = zsd2_j7;
+        }
+    </script>
+
+    <script>
+        document.write("<h4>内容二：赋值运算符（=、+=、-=、*=、/=、%=）</h4>");
+        document.write("i+=j 意义为：i=i+j")
+    </script>
+    <script>
+        document.write("<h4>内容三：字符串操作</h4>");
+        document.write("i=&quot;5&quot; ; j=&quot;5&quot; ; 则i+j=55<br/>");
+        document.write("i=5; ; j=&quot;5&quot; ; 则i+j=55  (因为任何数与字符串相加都会转换成字符串)<br/>");
+    </script>
+    <script>
+        document.write("<h4>内容四：比较运算符（==、===、!=、!==、>、<、>=、<=）</h4>");
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd2_i8 = "20";
+                    var zsd2_j8 = 20;
+                    document.write(zsd2_i8==zsd2_j8);
+                </xmp>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var zsd2_i8 = "20";
+        var zsd2_j8 = 20;
+        document.write("结果为：");
+        document.write(zsd2_i8==zsd2_j8);
+        document.write("  (双等号时，只要值一样就相等)<br/><br/>");
+    </script>
+
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd2_i9 = "20";
+                    var zsd2_j9 = 20;
+                    document.write(zsd2_i9===zsd2_j9);
+                </xmp>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var zsd2_i9 = "20";
+        var zsd2_j9 = 20;
+        document.write("结果为：");
+        document.write(zsd2_i9===zsd2_j9);
+        document.write("   (三等号时，必须类型和值都一样才相等)");
+    </script>
+
+    <script>
+        document.write("<h4>内容五：逻辑运算符（&&、||、!）</h4>");
+        document.write("&&与、||或、！非")
+    </script>
+    <script>
+        document.write("<h4>内容六：条件运算符</h4>");
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd2_i10 = 10;
+                    document.write(zsd2_i10>20? "i>20":"i<20");
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var zsd2_i10 = 10;
+        document.write(zsd2_i10>20? "i>20":"i<20");
+        document.write("   (满意则输出冒号前面的，不满意则输出冒号后面的)");
+    </script>
+
+    <script>
+        document.write("<h3>知识点三：JS语法-条件语句if...alse</h3>");
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd3_i1 = 18;
+                    if (zsd3_i1<=10){
+                    document.write("此时i<=10");
+                    }else if (zsd3_i1<=20) {
+                    document.write("此时i>10且i<=20");
+                    }else {
+                    document.write("此时i>20");
+                    }
+                </xmp>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var zsd3_i1 = 18;
+        if (zsd3_i1<=10){
+            document.write("此时i<=10");
+        }else if (zsd3_i1<=20) {
+            document.write("此时i>10且i<=20");
+        }else {
+            document.write("此时i>20");
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点四：JS语法-条件语句switch</h3>");
+    </script>
+
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd4_i1 = 8;
+                    switch (zsd4_i1) {
+                    case 1 :
+                    document.write("i=1");break;
+                    case 2 :
+                    document.write("i=2");break;
+                    case 3 :
+                    document.write("i=3");break;
+                    case 4 :
+                    document.write("i=4");break;
+                    case 5 :
+                    document.write("i=5");break;
+                    default:        //不满足所有条件
+                    document.write("i不满足所有条件");break;
+                    }
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var zsd4_i1 = 8;
+        switch (zsd4_i1) {
+            case 1 :
+                document.write("i=1");break;
+            case 2 :
+                document.write("i=2");break;
+            case 3 :
+                document.write("i=3");break;
+            case 4 :
+                document.write("i=4");break;
+            case 5 :
+                document.write("i=5");break;
+            default:
+                document.write("i不满足所有条件");break;
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点五：JS语法-for循环语句</h3>")
+    </script>
+
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd5_i1 = 10;
+                    for (var zsd5_j1=0;zsd5_j1<=zsd5_i1;zsd5_j1++){
+                    document.write(zsd5_j1);
+                    }
+
+                    var zsd5_arr = [0,1,2,3,4,5,6,7,8,9,10];
+                    for (var zsd5_j2=0;zsd5_j2<=10;zsd5_j2++){
+                    document.write(zsd5_arr[zsd5_j2]);
+                    }
+
+                    var zsd5_j3;     //for in 用法
+                    for (zsd5_j3 in zsd5_arr){
+                    document.write(zsd5_arr[zsd5_j3]+"、");
+                    }
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var zsd5_i1 = 10;
+        for (var zsd5_j1=0;zsd5_j1<=zsd5_i1;zsd5_j1++){
+            document.write(zsd5_j1 + "、");
+        }
+        document.write("<br/>");
+
+        var zsd5_arr = [0,1,2,3,4,5,6,7,8,9,10];
+        for (var zsd5_j2=0;zsd5_j2<=10;zsd5_j2++){
+            document.write(zsd5_arr[zsd5_j2] + "、");
+        }
+        document.write("<br/>");
+
+        var zsd5_j3;
+        for (zsd5_j3 in zsd5_arr){          //for in 用法
+            document.write(zsd5_arr[zsd5_j3]+"、");
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点六：JS语法-while/do-while循环语句</h3>")
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    var zsd6_i1 = 0;       //先判断后执行
+                    while (zsd6_i1<=10){
+                    document.write(zsd6_i1+"、");
+                    zsd6_i1++;
+                    }
+
+                    var zsd6_i2 = 11;      //do..while先执行后判断
+                    do {
+                    document.write(zsd6_i2+"、");
+                    zsd6_i2++;
+                    }while (zsd6_i2<=20)
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var zsd6_i1 = 0;
+        while (zsd6_i1<=10){
+            document.write(zsd6_i1+"、");
+            zsd6_i1++;
+        }
+
+        var zsd6_i2 = 11;
+        do {
+            document.write(zsd6_i2+"、");
+            zsd6_i2++;
+        }while (zsd6_i2<=20)
+    </script>
+
+    <script>
+        document.write("<h3>知识点七：JS语法-跳转语句（break、continue）</h3>")
+    </script>
+
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    for (var zsd7_i1 = 0;zsd7_i1<10;zsd7_i1++){
+                    if (zsd7_i1==3){
+                    continue;   //跳出本次循环，进入下次循环
+                    }else if (zsd7_i1==7){
+                    break;   //跳出循环，循环结束
+                    }else {
+                    document.write(zsd7_i1+"、");
+                    }
+                    }
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        for (var zsd7_i1 = 0;zsd7_i1<10;zsd7_i1++){
+            if (zsd7_i1==3){
+                continue;
+            }else if (zsd7_i1==7){
+                break;
+            }else {
+                document.write(zsd7_i1+"、");
+            }
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点八：JS函数-定义和调用函数、传递参数</h3>")
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <p>i=10 ,j=20 ,请问i+j = ?</p>
+                    <button onclick="zsd8_fun1(11,20)">结果</button>   //zsd8_fun1()调用函数，且传递参数
+                    <button onclick="zsd8_fun1(30,40)">结果</button>  //可以无数次引用函数
+                    <button onclick="zsd8_fun2('bo',21)">自我介绍</button>  //传递字符串
+                    <script>
+                        function zsd8_fun1(zsd8_i1,zsd8_j1) {            //定义函数
+                            var zsd8_sum1 = zsd8_i1+zsd8_j1;
+                            alert(zsd8_sum1);
+                        }
+                        function zsd8_fun2(name,age) {
+                            alert("大家好，我叫"+name+",今年"+age+"岁,"+"很高心和大家在这里见面");
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <p>i=10 ,j=20 ,请问i+j = ?</p>
+    <button onclick="zsd8_fun1(11,20)">结果</button>
+    <button onclick="zsd8_fun1(30,40)">结果</button>
+    <button onclick="zsd8_fun2('bo',21)">自我介绍</button>
+    <script>
+        function zsd8_fun1(zsd8_i1,zsd8_j1) {
+            var zsd8_sum1 = zsd8_i1+zsd8_j1;
+            alert(zsd8_sum1);
+        }
+
+        function zsd8_fun2(name,age) {
+            alert("大家好，我叫"+name+",今年"+age+"岁,"+"很高心和大家在这里见面");
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点九：JS函数-带返回值的函数</h3>")
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <p>a = 10 ,b = 20 ,问a和b哪个比较大？</p>
+                    <p id="zsd9_p1"></p>
+                    <button onclick="zsd9_fun2(10,20)">查看结果</button>
+                    <button onclick="zsd9_fun1(10,20)">查看比较结果</button>
+                    <script>
+                        function zsd9_fun1(zsd9_i1,zsd9_j1) {
+                            if(zsd9_i1>zsd9_j1){
+                                return alert("a比b大");  //可以返回数字，也可以返回字符串和命令等；
+                            }else {
+                                return alert("b比a大");
+                            }
+                        }
+
+                        function zsd9_fun2(zsd9_i2,zsd9_j2){
+                            if(zsd9_i2>zsd9_j2){
+                                zsd9_sum = "a比b大";
+                            }else {
+                                zsd9_sum = "b比a大";
+                            }
+                            document.getElementById("zsd9_p1").innerHTML=zsd9_sum;
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <p>a = 10 ,b = 20 ,问a和b哪个比较大？</p>
+    <p id="zsd9_p1"></p>
+    <button onclick="zsd9_fun2(10,20)">查看结果</button>
+    <button onclick="zsd9_fun1(10,20)">查看比较结果</button>
+    <script>
+        function zsd9_fun1(zsd9_i1,zsd9_j1) {
+            if(zsd9_i1>zsd9_j1){
+                return alert("a比b大");
+            }else {
+                return alert("b比a大");
+            }
+        }
+
+        function zsd9_fun2(zsd9_i2,zsd9_j2){
+            if(zsd9_i2>zsd9_j2){
+                zsd9_sum = "a比b大";
+            }else {
+                zsd9_sum = "b比a大";
+            }
+            document.getElementById("zsd9_p1").innerHTML=zsd9_sum;
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点十：JS异常捕获</h3>")
+    </script>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    function zsd10_fun1 () {
+                    try {
+                    alert(skr);
+                    }catch (err) {
+                    alert(err);
+                    }
+                    }
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <button onclick="zsd10_fun1()">点击查看异常</button>
+    <script>
+        function zsd10_fun1 () {
+            try {
+                alert(skr);
+            }catch (err) {
+                alert(err);
+            }
+        }
+    </script>
+
+    <h4>自定义异常</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    function zsd10_fun2() {
+                    try {
+                    var zsd10_input1_text = document.getElementById("zsd10_input1").value;  //获取输入值
+                    if(zsd10_input1_text == ""){       //判断输入值是否为空
+                    throw "请输入文字";       //自定义输出异常
+                    }
+                    }catch (err) {
+                    alert(err);
+                    }
+                    }
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <input type="text" id="zsd10_input1">
+    <input type="button" onclick="zsd10_fun2()" value="确定">
+    <script>
+        function zsd10_fun2() {
+            try {
+                var zsd10_input1_text = document.getElementById("zsd10_input1").value; //获取输入值
+                if(zsd10_input1_text == ""){
+                    throw "请输入文字";
+                }
+            }catch (err) {
+                alert(err);
+            }
+        }
+    </script>
+
+    <script>
+        document.write("<h3>知识点十一：JS事件</h3>")
+    </script>
+    <img src="image/事件.PNG" width="600px">
+    <h4>内容1：鼠标经过和移出事件</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <div id="zsd11_div1" onmouseover="zsd11_onOver1(this)" onmouseout="zsd11_onOut1(this)"></div>
+                    <script>
+                        function zsd11_onOver1(ojj) {
+                            ojj.innerHTML="开灯";
+                            ojj.style.background = "#00ffff";
+                        }
+                        function zsd11_onOut1(ojj) {
+                            ojj.innerHTML="关灯";
+                            ojj.style.background = "cadetblue";
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <div id="zsd11_div1" onmouseover="zsd11_onOver1(this)" onmouseout="zsd11_onOut1(this)"></div>
+    <script>
+        function zsd11_onOver1(ojj) {
+            ojj.innerHTML="开灯";
+            ojj.style.background = "#00ffff";
+        }
+        function zsd11_onOut1(ojj) {
+            ojj.innerHTML="关灯";
+            ojj.style.background = "cadetblue";
+        }
+    </script>
+    <h4>内容2：文本内容改变事件</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <form>
+                        <input type="text" onchange="zsd11_onChange(this)">
+                    </form>
+                    <script>
+                        function zsd11_onChange(bg) {
+                            bg.style.background = "cadetblue";   //改变背景颜色.style.background=""
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <input type="text" onchange="zsd11_onChange(this)">
+    </form>
+    <script>
+        function zsd11_onChange(bg) {
+            bg.style.background = "cadetblue";
+        }
+    </script>
+    <h4>内容3：文本框选中事件</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <form>
+                        <input type="text" onselect="zsd11_onselect1(this)">
+                    </form>
+                    <script>
+                        function zsd11_onselect1(ojj) {
+                            ojj.style.background = "blue";
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <input type="text" onselect="zsd11_onselect1(this)">
+    </form>
+    <script>
+        function zsd11_onselect1(ojj) {
+            ojj.style.background = "blue";
+        }
+    </script>
+    <h4>内容4：光标聚集事件</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <form>
+                        <input type="text" onfocus="zsd11_onFocus(this)"placeholder="请输入">//光标聚集事件、placehoder为模糊显示
+                    </form>
+                    <script>
+                        function zsd11_onFocus(ojj) {
+                            ojj.style.background = "blue"
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <form>
+        <input type="text" onfocus="zsd11_onFocus(this)" placeholder="请输入" >
+    </form>
+    <script>
+        function zsd11_onFocus(ojj) {
+            ojj.style.background = "blue"
+        }
+    </script>
+    <script>
+        function zsd11_onLoad() {               //网页加载事件
+            alert("网站加载完成");
+        }
+    </script>
+
+    <h3>知识点十二：DOM操作HTML</h3>
+    <br/>
+    <h4>改变内容</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <p id="zsd12_p1">我是原来的</p>
+                    <button onclick="zsd12_fun1()">点击改变</button>
+                    <script>
+                        function zsd12_fun1() {
+                            document.getElementById("zsd12_p1").innerHTML = "我是改变后的";          //通过id找到html元素
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <p id="zsd12_p1">我是原来的</p>
+    <button onclick="zsd12_fun1()">点击改变</button>
+    <script>
+        function zsd12_fun1() {
+            document.getElementById("zsd12_p1").innerHTML = "我是改变后的";          //通过id找到html元素
+        }
+    </script>
+
+    <h4>改变元素</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <a id="zsd12_a1" href="http://www.baidu.com">现在是百度</a>
+                    <button onclick="zsd12_fun2()">点击改变</button>
+                    <script>
+                        function zsd12_fun2() {
+                            document.getElementById("zsd12_a1").innerHTML="现在是淘宝";
+                            document.getElementById("zsd12_a1").href="http://www.taobao.com";  //获取id后改变元素
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <img id="zsd12_img1" src="image/美女图片/3.jpg" width="100px">
+    <a id="zsd12_a1" href="http://www.baidu.com">现在是百度</a>
+    <button onclick="zsd12_fun2()">点击改变</button>
+    <script>
+        function zsd12_fun2() {
+            document.getElementById("zsd12_img1").src="image/美女图片/4.jpg";
+            document.getElementById("zsd12_a1").innerHTML="现在是淘宝";
+            document.getElementById("zsd12_a1").href="http://www.taobao.com";
+        }
+    </script>
+
+    <h3>知识点十三：DOM操作CSS</h3>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <div id="zsd13_div1"><p id="zsd13_p1">改变前</p></div>
+                    <button onclick="zsd13_fun1()">点击改变</button>
+                    <script>
+                        function zsd13_fun1() {
+                            document.getElementById("zsd13_div1").style.color="blue";  //改变字体颜色
+                            document.getElementById("zsd13_p1").innerHTML="改变后";     //改变文字
+                            document.getElementById("zsd13_div1").style.background="red";  //改变背景
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <div id="zsd13_div1"><p id="zsd13_p1">改变前</p></div>
+    <button onclick="zsd13_fun1()">点击改变</button>
+    <script>
+        function zsd13_fun1() {
+            document.getElementById("zsd13_div1").style.color="blue";
+            document.getElementById("zsd13_p1").innerHTML="改变后";
+            document.getElementById("zsd13_div1").style.background="red";
+        }
+    </script>
+
+    <h3>知识点十四：DOM EventListner事件句柄</h3>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <button id="zsd14_btn1">按钮</button>         //设置id即可
+                    <script>
+                        function zsd14_fun1() {
+                            alert("hello");
+                        }
+                        function zsd14_fun2() {
+                            alert("world");
+                        }
+                        document.getElementById("zsd14_btn1").addEventListener("mouseover",zsd14_fun1);   //添加鼠标移过则触发函数
+                        document.getElementById("zsd14_btn1").addEventListener("click",zsd14_fun1);     //添加点击则触发函数
+                        document.getElementById("zsd14_btn1").addEventListener("click",zsd14_fun2);
+                        document.getElementById("zsd14_btn1").removeEventListener("mouseover",zsd14_fun1); //移除
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <button id="zsd14_btn1">按钮</button>
+    <script>
+        function zsd14_fun1() {
+            alert("hello");
+        }
+        function zsd14_fun2() {
+            alert("world");
+        }
+        document.getElementById("zsd14_btn1").addEventListener("mouseover",zsd14_fun1);
+        document.getElementById("zsd14_btn1").addEventListener("click",zsd14_fun1);
+        document.getElementById("zsd14_btn1").addEventListener("click",zsd14_fun2);
+        document.getElementById("zsd14_btn1").removeEventListener("mouseover",zsd14_fun1);
+    </script>
+
+    <h3>知识点十五：事件流</h3>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <button id="zsd15_btn">按钮</button>
+                    <script>
+                        function zsd15_fun1() {
+                            alert("DOM0级事件支持浏览器");
+                        }
+                        function zsd15_fun2() {
+                            alert("DOM2级事件支持浏览器");
+                        }
+                        function zsd15_fun3() {
+                            alert("IE事件支持浏览器");
+                        }
+                        var zsd15_btn = document.getElementById("zsd15_btn");
+                        if(zsd15_btn.addEventListener){                         //判断浏览器是否支持DOM2级事件处理
+                            zsd15_btn.addEventListener("click",zsd15_fun2);
+                        }else if (zsd15_btn.attachEvent){                   //判断浏览器是否支持DOM0级事件处理
+                            zsd15_btn.attachEvent("click",zsd14_fun1);
+                        }else {                                               //都不支持，则IE处理
+                            zsd15_btn.onclick = zsd15_fun3();
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <button id="zsd15_btn">按钮</button>
+    <script>
+        function zsd15_fun1() {
+            alert("DOM0级事件支持浏览器");
+        }
+        function zsd15_fun2() {
+            alert("DOM2级事件支持浏览器");
+        }
+        function zsd15_fun3() {
+            alert("IE事件支持浏览器");
+        }
+        var zsd15_btn = document.getElementById("zsd15_btn");
+        if(zsd15_btn.addEventListener){
+            zsd15_btn.addEventListener("click",zsd15_fun2);
+        }else if (zsd15_btn.attachEvent){
+            zsd15_btn.attachEvent("click",zsd15_fun1);
+        }else {
+            zsd15_btn.onclick = zsd15_fun3();
+        }
+    </script>
+
+    <h3>知识点十六：事件对象</h3>
+    <h4>内容一：type获取事件类型</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <div id="zsd16_div1">
+                        <button id="zsd16_btn1">获取事件类型按钮</button>
+                        <button id="zsd16_btn2">获取事件目标按钮</button>
+                        <a href="http://baidu.com" id="zsd16_a1">点击后不会跳转</a>
+                    </div>
+                    <script>
+                        var zsd16_btn1 = document.getElementById("zsd16_btn1");
+                        var zsd16_btn2 = document.getElementById("zsd16_btn2");
+                        var zsd16_div1 = document.getElementById("zsd16_div1");
+                        zsd16_btn1.addEventListener("click",zsd16_fun1);
+                        zsd16_btn2.addEventListener("click",zsd16_fun2);
+                        zsd16_div1.addEventListener("click",zsd16_fun3);
+                        document.getElementById("zsd16_a1").addEventListener("click",zsd16_fun4);
+                        function zsd16_fun1(event) {
+                            alert(event.type);              //获取事件类型
+                            event.stopPropagation();      //阻止事件冒泡
+                        }
+                        function zsd16_fun2(event) {
+                            alert(event.target);           //获取事件目标
+                            event.stopPropagation();        //阻止事件冒泡
+                        }
+                        function zsd16_fun3() {
+                            alert("我是事件冒泡后显示的");  //事件冒泡验证
+                        }
+                        function zsd16_fun4(event) {
+                            event.preventDefault();      //阻止a标签的默认事件执行
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <div id="zsd16_div1">
+        <button id="zsd16_btn1">获取事件类型按钮</button>
+        <button id="zsd16_btn2">获取事件目标按钮</button>
+        <a href="http://baidu.com" id="zsd16_a1">点击后不会跳转</a>
+    </div>
+    <script>
+        var zsd16_btn1 = document.getElementById("zsd16_btn1");
+        var zsd16_btn2 = document.getElementById("zsd16_btn2");
+        var zsd16_div1 = document.getElementById("zsd16_div1");
+        zsd16_btn1.addEventListener("click",zsd16_fun1);
+        zsd16_btn2.addEventListener("click",zsd16_fun2);
+        zsd16_div1.addEventListener("click",zsd16_fun3);
+        document.getElementById("zsd16_a1").addEventListener("click",zsd16_fun4);
+        function zsd16_fun1(event) {
+            alert(event.type);
+            event.stopPropagation();
+        }
+        function zsd16_fun2(event) {
+            alert(event.target);
+            event.stopPropagation();
+        }
+        function zsd16_fun3() {
+            alert("我是事件冒泡后显示的");
+        }
+        function zsd16_fun4(event) {
+            event.preventDefault();
+        }
+    </script>
+
+    <h3>知识点十七：内置对象-创建对象</h3>
+    <h4>方式一</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <script>
+                        zsd17_people1 = new Object();   //创建people对象，new为关键字，Object为最大的对象，其他的是他的附类
+                        zsd17_people1.name = "bo";      //自定义对象的属性
+                        zsd17_people1.age = "70" ;
+                        document.write("name: "+zsd17_people1.name+"  age: "+zsd17_people1.age);
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        zsd17_people1 = new Object();   //创建people对象，new为关键字，Object为最大的对象，其他的是他的附类
+        zsd17_people1.name = "bo";      //自定义对象的属性
+        zsd17_people1.age = "70" ;
+        document.write("name: "+zsd17_people1.name+"  age: "+zsd17_people1.age);
+    </script>
+    <h4>方式二</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <script>
+                        zsd17_people2 = {name:"bo",age:"70"};        //创建对象并赋值属性
+                        document.write("name: "+zsd17_people1.name+"  age: "+zsd17_people1.age);
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        zsd17_people2 = {name:"bo",age:"70"};
+        document.write("name: "+zsd17_people1.name+"  age: "+zsd17_people1.age);
+    </script>
+    <h4>方式三</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <script>
+                        function zsd17_people(name,age) {
+                            this._name = name;          //自定义属性
+                            this._age = age;
+                        }
+                        zsd17_people3 = new zsd17_people("bo",70);  //创建对象
+                        document.write("name: "+zsd17_people3._name+"  age: "+zsd17_people3._age)
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function zsd17_people(name,age) {
+            this._name = name;
+            this._age = age;
+        }
+        zsd17_people3 = new zsd17_people("bo",70);
+        document.write("name: "+zsd17_people3._name+"  age: "+zsd17_people3._age)
+    </script>
+
+    <h3>知识点十八：String字符串对象</h3>
+    <h4>hello,快来计算我r的长度吧</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <xmp>
+                    <script>
+                        var zsd18_string1 = "hello,快来计算我r的长度吧";
+
+                        document.write("长度为："+zsd18_string1.length);  //查看字符串长度
+                        document.write("<br/>r是否存在存在则输出位置，不存在输出-1："+zsd18_string1.indexOf("r")); //查看字符串
+                        document.write("<br/>r是否存在，存在则匹配出来，不存在则输出null："+zsd18_string1.match("r"));//内容匹配
+                        document.write("<br/>修改字符串："+zsd18_string1.replace("长度","宽度")); //修改字符串
+                        document.write("转换成大写："+zsd18_string1.toUpperCase());    //toUpperCase()转换成大写，toLowerCase()转换成小写
+                        var zsd18_string2 = "hello,feng,yong,bo,de,boke";
+                        var zsd18_arr = zsd18_string2.split(",");            //split转换成数组，分割符为，可任意设定
+                        var zsd18_arrLenth = zsd18_arr.length;
+                        for (var i=0;i<zsd18_arrLenth;i++){
+                            if(i==0){
+                                document.write("<br/>"+zsd18_arr[i].toUpperCase()+" ");
+                            }else{
+                                document.write(zsd18_arr[i]+" ");
+                            }
+                        }
+                    </script>
+                </xmp>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var zsd18_string1 = "hello,快来计算我r的长度吧";
+
+        document.write("长度为："+zsd18_string1.length);  //查看字符串长度
+        document.write("<br/>r是否存在存在则输出位置，不存在输出-1："+zsd18_string1.indexOf("r")); //查看字符串
+        document.write("<br/>r是否存在，存在则匹配出来，不存在则输出null："+zsd18_string1.match("r"));//内容匹配
+        document.write("<br/>修改字符串："+zsd18_string1.replace("长度","宽度")); //修改字符串
+        document.write("转换成大写："+zsd18_string1.toUpperCase());    //toUpperCase()转换成大写，toLowerCase()转换成小写
+        var zsd18_string2 = "hello,feng,yong,bo,de,boke";
+        var zsd18_arr = zsd18_string2.split(",");            //split转换成数组，分割符为，可任意设定
+        var zsd18_arrLenth = zsd18_arr.length;
+        for (var i=0;i<zsd18_arrLenth;i++){
+            if(i==0){
+                document.write("<br/>"+zsd18_arr[i].toUpperCase()+" ");
+            }else{
+                document.write(zsd18_arr[i]+" ");
+            }
+        }
+    </script>
+
+    <h3>知识点十九：内置对象-Date对象</h3>
+    <div id="zsd19_div1"></div>
+    <script>
+        function zsd19_starTime() {
+            var today = new Date();       //调用系统时间
+            var year = today.getFullYear();     //定义时间
+            var month = today.getMonth();
+            var day = today.getDay();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            var second1 = today.getMilliseconds();
+            month = checkTime(month);       //检查，个位数时在前面加0
+            day = checkTime(day);
+            hour = checkTime(hour);
+            minute = checkTime(minute);
+            second = checkTime(second);
+            document.getElementById("zsd19_div1").innerHTML = year+":"+month+":"+day+":"+hour+":"+minute+":"+second+":"+second1;
+            t = setTimeout(function () {
+                zsd19_starTime();
+                },100);
+        }
+        function checkTime(i){
+            if(i<10){
+            i = "0"+i;
+        }
+            return i;
+        }
+        zsd19_starTime();
+    </script>
+
+    <div id="zsd19_div2">
+        <div id="zsd19_div5">
+            <div id="zsd19_div3">
+                <p>当前时间：</p>
+            </div>
+            <div id="zsd19_div4"></div>
+        </div>
+    </div>
+    <script>
+        function zsd19_starTime2() {
+            var today = new Date();       //调用系统时间
+            var year = today.getFullYear();     //定义时间
+            var month = today.getMonth();
+            var day = today.getDay();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            var second1 = today.getMilliseconds();
+            month = checkTime(month);       //检查，个位数时在前面加0
+            day = checkTime(day);
+            hour = checkTime(hour);
+            minute = checkTime(minute);
+            second = checkTime(second);
+            second1 = checkTime2(second1);
+            document.getElementById("zsd19_div4").innerHTML = year+":"+month+":"+day+":"+hour+":"+minute+":"+second+":"+second1;
+            t = setTimeout(function () {
+                zsd19_starTime2();
+            },100);
+        }
+        function checkTime(i){
+            if(i<10){
+                i = "0"+i;
+            }
+            return i;
+        }
+        function checkTime2(i){
+            if(i<10){
+                i = "00"+i;
+            }else if(i<100){
+                i = "0"+i;
+            }
+            return i;
+        }
+        zsd19_starTime2();
+    </script>
+
+    <h3>知识点二十：内置对象-Array数组对象</h3>
+    <h4>属性一：concat数组结合</h4>
+    <script>
+        var zsd20_arr1 = ["hello","feng"];
+        var zsd20_arr2 = ["yong","bo","boke"];
+        var zsd20_arr3 = zsd20_arr1.concat(zsd20_arr2);  //concat数组结合
+        document.write(zsd20_arr3);
+    </script>
+    <br/>
+    <h4>属性二：sort排序</h4>
+    <p>升序</p>
+    <script>
+        var zsd20_arr4 = ["c","b","a","t","n","m",2,5,1,9,"B","T","M","Q"];
+        document.write(zsd20_arr4.sort()); //sort排序，小到大
+    </script>
+    <p>倒序</p>
+    <script>
+        var zsd20_arr5 = ["c","b","a","t","n","m",2,5,1,9,"B","T","M","Q"];
+        document.write(zsd20_arr5.sort(function (a, b) {        //倒序，只对数字有用
+            return b-a;
+        })+"(该种方法对对数字有用)");
+    </script>
+    <h4>属性三：push追加数组</h4>
+    <script>
+        var zsd20_arr6 = ["a","b","c"];
+        zsd20_arr6.push("d","e");            //push追加数组元素
+        document.write(zsd20_arr6);
+        document.write("<br/>长度为"+zsd20_arr6.push("d","e"));//打印追加后的长度
+    </script>
+    <h4>属性四：reverse翻转</h4>
+    <script>
+        document.write(zsd20_arr4.reverse());//reverse,翻转
+    </script>
+
+    <h3>知识点二十一：内置对象-Math对象</h3>
+    <h4>属性一：round四舍五入</h4>
+    <script>
+        document.write("3.6四舍五入为："+Math.round(3.6));
+    </script>
+    <h4>属性二：random随机数</h4>
+    <script>
+        document.write("默认从0-1随机数 : "+Math.random());   //默认从0-1随机数
+        document.write("<br/>从0-100随机数 : "+Math.random()*100);  //从0-100随机数
+        document.write("<br/>去掉小数点后 : "+parseInt(Math.random()*100));  //去掉小数点后
+    </script>
+    <h4>属性三：max,min最大最小值</h4>
+    <script>
+        document.write("(10,30,2,100,2000)最大值 ： "+Math.max(10,30,2,100,2000));     //最大值
+        document.write("<br/>(20,30,2,1.2,0.2)最小值 ： "+Math.min(20,30,2,1.2,0.2));       //最小值
+    </script>
+    <h4>属性四：abs绝对值</h4>
+    <script>
+        document.write("-100的绝对值为 ： "+Math.abs(-100));  //绝对值
+    </script>
+
+    <h3>知识点二十二：DOM(Document Object Model文档对象模型)对象控制HTML元素详解</h3>
+    <h4>属性一：getElementsByName获取名字name</h4>
+    <p name="zsd22_p1">hello</p>
+    <p name="zsd22_p1">hello</p>
+    <p name="zsd22_p1">hello</p>
+    <p name="zsd22_p1">hello</p>
+    <script>
+        var zsd22_a1 = document.getElementsByName("zsd22_p1");  //获取名字，可以获取多个，以集合形式储存
+        document.write(zsd22_a1);
+        zsd22_a1[1].innerHTML = "world";
+    </script>
+    <h4>属性二：getElementsByTagName获取名字的元素</h4>
+    <p name="zsd22_p2">wold</p>
+    <p name="zsd22_p2">world</p>
+    <p name="zsd22_p2">wrld</p>
+    <script>
+        var zsd22_a2 = document.getElementsByTagName("zsd22");   //获取名字里面的元素
+        document.write(zsd22_a2);
+        zsd22_a2[1].innerHTML = "hello";
+    </script>
+    <h4>属性三：getAttribute获取元素的属性</h4>
+    <a id="zsd22_a3" title="我是属性，我被成功获取了啊"></a>
+    <script>
+        var zsd22_a4 = document.getElementById("zsd22_a3");  //先通过id获取到元素
+        var zsd22_a5 = zsd22_a4.getAttribute("title");   //获取元素的属性
+        document.write(zsd22_a5);
+    </script>
+    <h4>属性四：setAttribute设置元素属性</h4>
+    <a id="zsd22_a6"></a>
+    <script>
+        var zsd22_a7 = document.getElementById("zsd22_a6");
+        zsd22_a7.setAttribute("title","动态设置属性");
+        var zsd22_a8 = zsd22_a7.getAttribute("title");
+        document.write(zsd22_a8);
+    </script>
+    <h4>属性五：childNodes访问子节点</h4>
+    <div id="zsd22_div1">
+        <p>你好啊，我是子节点1</p>
+        <p>你好啊，我是子节点2</p>
+        <button>nihao</button>
+        <div></div>
+        <p>你好啊，我是子节点3</p>
+    </div>
+    <script>
+        var zsd22_childNode = document.getElementById("zsd22_div1").childNodes;  //访问子节点
+        document.write(zsd22_childNode.length);     //打印出长度为7，因为空格也为一个节点数
+        for (var i=0;i<zsd22_childNode.length;i++){
+            document.write(zsd22_childNode[i].nodeType+zsd22_childNode[i].nodeName+"<br/>");
+        }
+    </script>
+
+    <h4>属性六：parentNodes访问父节点</h4>
+    <div>
+        <p id="zsd22_p3"></p>
+    </div>
+    <script>
+        function zsd23_fun1() {
+            var parentDiv = document.getElementById("zsd22_p3");
+            document.write(parentDiv.parentNode.nodeName);   //访问父节点，然后访问名字
+        }
+        zsd23_fun1();
+    </script>
+
+    <h4>属性七：createElement创建新节点</h4>
+    <div id="zsd22_div3">
+        <p>我是原本就有的</p>
+    </div>
+    <script>
+        function zsd22_createElement() {
+            var createDiv = document.getElementById("zsd22_div3");
+            var createInput = document.createElement("input");    //创建input类型的节点
+            createInput.type = "button";                            //设置类型为按钮
+            createInput.value = "我是新添加的按钮";              //设置按钮的值
+            createDiv.appendChild(createInput);                     //appendChild在zsd22_div中显示新建的input节点
+        }
+        zsd22_createElement();
+    </script>
+    <h4>属性八：insertBefore插入节点</h4>
+    <div id="zsd22_div4">
+        <p id="zsd22_p4">请在我上面添加一个按钮</p>
+    </div>
+    <script>
+        function zsd22_insertBefore() {
+            var insertDiv = document.getElementById("zsd22_div4");
+            var insertP = document.getElementById("zsd22_p4");
+            var insertButton = document.createElement("input");
+            insertButton.type = "button";
+            insertButton.value = "我是插入的按钮";
+            insertDiv.insertBefore(insertButton,insertP);         //insertBefore(新插入的元素，在哪个位置前面插入)
+        }
+        zsd22_insertBefore();
+    </script>
+    <h4>属性九：removeChild删除节点</h4>
+    <div id="zsd22_div5">
+        <p id="zsd22_p5">我要被删除啦</p>
+        <p id="zsd22_p6">上面那个p被删除啦</p>
+    </div>
+    <script>
+        function zsd22_removeChild() {
+            var removeDiv = document.getElementById("zsd22_div5");
+            removeDiv.removeChild(removeDiv.childNodes[1]);   //调用removeChild进行删除，childNodes[i]选择子节点
+        }
+        zsd22_removeChild();
+    </script>
+
+    <h4>属性十：offsetHeight网页尺寸（不包括滚动条）</h4>
+    <div id="zsd22_div6" >
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+    </div>
+    <script>
+        function zsd22_offsetSize() {
+            var heightDiv = document.getElementById("zsd22_div6").offsetHeight;       //网页高度
+            var widthDiv = document.getElementById("zsd22_div6").offsetWidth;         //网页宽度
+            document.write(widthDiv+","+heightDiv);
+        }
+        zsd22_offsetSize();
+    </script>
+    <h4>属性十一：scrollHeight网页尺寸（包括滚动条）</h4>
+    <div id="zsd22_div7" >
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+        <p>a</p>
+    </div>
+    <script>
+        function zsd22_scrollSize() {
+            var widthDiv = document.getElementById("zsd22_div7").scrollWidth;        //网页高度
+            var heightDiv = document.getElementById("zsd22_div7").scrollHeight;       //网页宽度
+            document.write(widthDiv+","+heightDiv);
+        }
+        zsd22_scrollSize();
+    </script>
+
+    <h3>知识点二十三：浏览器对象-window对象</h3>
+    <button id="zsd23_btn1" onclick="zsd23_openWindow()">打开新窗口</button>
+    <button onclick="zsd23_closeWindow()">关闭当前窗口</button>
+    <script>
+        function zsd23_openWindow() {      //打开浏览器页面
+            window.open("klayboke.html","windowname=hello","height=300,width=600,top=300,left=600,toolbar=yes,menubar=yes");
+         }
+        function zsd23_closeWindow() {
+            window.close();               //关闭当前窗口
+        }
+    </script>
+
+    <h3>知识点二十四：浏览器对象-计时器</h3>
+    <h4>计时方法一：setInterval间隔指定的毫秒不断执行指定代码</h4>
+    <button onclick="zsd24_lookTime()">查看时间</button>
+    <button onclick="zsd24_stopTime()">点击停止</button>
+    <div id="zsd24_div1">
+        <p id="zsd24_p1"></p>
+    </div>
+    <script>
+        function zsd24_getTime() {
+            var time = new Date();           //获取时间
+            var timeString = time.toLocaleString();   //将时间转换成字符串
+            document.getElementById("zsd24_p1").innerHTML = timeString;   //打印出时间
+        }
+
+        var lookTime;                          //定义对象，用来承载循环
+        function zsd24_lookTime() {
+            lookTime = setInterval(function () {     //setInterval循环执行
+                zsd24_getTime();
+            },1000);
+        }
+
+        function zsd24_stopTime() {
+            clearInterval(lookTime);               //clearInterval，通过停止循环的对象来停止循环
+        }
+    </script>
+
+    <h4>计时方式二：setTimeout等待指定毫秒执行指定代码</h4>
+    <button onclick="zsd24_jumpTime()">1秒后弹出当前时间</button>
+    <button onclick="zsd24_lookTime2()">查看时间</button>
+    <button onclick="zsd24_stopTime2()">点击停止</button>
+    <div id="zsd24_div2">
+        <p id="zsd24_p2"></p>
+    </div>
+    <script>
+        var zsd24_timeString2;
+        var zsd24_jump;
+        var zsd24_look;
+        function zsd24_getTime2() {
+            var time = new Date();
+            zsd24_timeString2 = time.toLocaleString();
+            document.getElementById("zsd24_p2").innerHTML = zsd24_timeString2;
+        }
+        function zsd24_jumpTime() {
+            zsd24_jump = setTimeout(function () {        //setTimeout，等待1000ms执行
+                alert(zsd24_timeString2+"1");
+            },1000);
+        }
+        function zsd24_lookTime2() {
+            zsd24_look = setTimeout(function () {        //等待1000ms执行
+                zsd24_lookTime2();                          //循环等待和执行
+                zsd24_getTime2();                           //调用时间函数
+            },1000);
+        }
+        function zsd24_stopTime2() {
+            clearTimeout(zsd24_look);                      //clearTime，通过停止循环的对象来停止循环
+        }
+    </script>
+
+    <h3>知识点二十五：浏览器对象-History对象</h3>
+    <h4>属性一：history.back()返回，history.forward前进</h4>
+    <a href="zsd25_test.html">跳转到下个页面</a>
+    <button onclick="zsd25_fun1()">点击前进到下个页面</button>
+    <script>
+        function zsd25_fun1() {
+            history.forward();           //前进
+        }
+    </script>
+
+    <h4>属性二：history.go()跳转到特定页面</h4>
+    <p>请点击到登陆页面</p>
+    <a href="zsd25_sux2.html">登陆</a>
+
+    <h3>知识点二十六：浏览器对象-Location</h3>
+    <h4>属性一：hostname返回主机名称</h4>
+    <p id="zsd26_p1">点击按钮显示当前主机名</p>
+    <button onclick="zsd26_fun1()">按钮</button>
+    <script>
+        function zsd26_fun1() {
+            document.getElementById("zsd26_p1").innerHTML = window.location.hostname;
+        }
+    </script>
+    <h4>属性二：pathname返回当前地址</h4>
+    <p id="zsd26_p2">点击按钮显示当前地址</p>
+    <button onclick="zsd26_fun2()">按钮</button>
+    <script>
+        function zsd26_fun2() {
+            document.getElementById("zsd26_p2").innerHTML = window.location.pathname;
+        }
+    </script>
+    <h4>属性三：port返回当前端口</h4>
+    <p id="zsd26_p3">点击按钮显示当前端口</p>
+    <button onclick="zsd26_fun3()">按钮</button>
+    <script>
+        function zsd26_fun3() {
+            document.getElementById("zsd26_p3").innerHTML = window.location.port;
+        }
+    </script>
+    <h4>属性四：protocol返回当前协议</h4>
+    <p id="zsd26_p4">点击按钮显示当前协议</p>
+    <button onclick="zsd26_fun4()">按钮</button>
+    <script>
+        function zsd26_fun4() {
+            document.getElementById("zsd26_p4").innerHTML = window.location.protocol;
+        }
+    </script>
+    <h4>属性五：href返回当前URL</h4>
+    <p id="zsd26_p5">点击按钮显示当前URL</p>
+    <button onclick="zsd26_fun5()">按钮</button>
+    <script>
+        function zsd26_fun5() {
+            document.getElementById("zsd26_p5").innerHTML = window.location.href;
+        }
+    </script>
+    <h4>属性六：assign加载新的文档</h4>
+    <p id="zsd26_p6">点击按钮加载新的文档</p>
+    <button onclick="zsd26_fun6()">按钮</button>
+    <script>
+        function zsd26_fun6() {
+            window.location.assign("http://www.baidu.com");
+        }
+    </script>
+
+    <h3>知识点二十七：浏览器对象-Screen对象</h3>
+    <script>
+        document.write("可用高度："+screen.availHeight+"，可用宽度："+screen.availWidth+"<br/>");
+        document.write("高度："+screen.height+"，宽度："+screen.width);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

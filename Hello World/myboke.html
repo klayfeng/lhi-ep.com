@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klay 博客</title>
+    <style>
+        .center *{                                                /*水平居中显示.class*/
+            display:inline-block;
+            vertical-align:middle;
+            margin-left: 30px;
+            color: #232924;
+        }
+
+        #leftmune{
+            font-size: small;                                     /*左菜单栏的字体大小*/
+            margin-top: 30px;
+        }
+
+        #leftmune a{                                            /*左菜单栏的链接颜色*/
+        color: #5f9ea0; transition:0.5s;
+        }
+
+        #leftmune a:hover{color:#ed8039;}                      /*左菜单栏链接变色*/
+
+        #rightbody{                                                /*主体内容边框*/
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #leftgg{
+            background-color: rgba(174, 164, 150, 0.77);
+            width: 100px;
+            height: 100px;
+        }
+
+        #footer{                                                       /*页脚*/
+            color: burlywood;
+        }
+
+        #bodystyle01{                                                  /*body主体部分的背景颜色*/
+            background-color: #e2e2e2;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        #bodystyle02{                                                   /*body主体部分的背景颜色*/
+            background-color: #d1d1d1;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        #bodystyle03{                                                  /*body主体部分的背景颜色*/
+            background-color: #bababa;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        #zsd13divbj-container-id{                                       /*知识点13引用的id*/
+            background-color: white;
+            width: 100%;
+            height: 200px;
+        }
+
+        #zsd13divbj-header-id{                                      /*知识点13引用的id*/
+            background-color: cadetblue;
+            width: 100%;
+            height: 10%;
+        }
+
+        #zsd13divbj-leftmune-id{                                      /*知识点13引用的id*/
+            background-color: #aa5b29;
+            width: 30%;
+            height: 80%;
+            float: left;
+        }
+
+        #zsd13divbj-body-id{                                      /*知识点13引用的id*/
+            background-color: coral;
+            width: 70%;
+            height: 80%;
+            float: left;
+        }
+
+        #zsd13divbj-footer-id{                                      /*知识点13引用的id*/
+            background-color: #343a35;
+            width: 100%;
+            height: 10%;
+            clear: both;
+        }
+
+
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="zsd9-sx1.css">   /*<!--HTML样式1：外部样式表-->*/
+
+    <style type="text/css">
+        p{
+            color: green;                                               /*  HTML样式2：内部样式表*/
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+
+    <style>                                                              /*知识点13的style*/
+    #zsd13ulid{
+        color: white;
+        font-size: smaller;
+    }
+    </style>
+
+</head>
+<body marginheight="0"marginwidth="5%">
+    <table width="100%" height="2000px" style="background-color: lightsteelblue" border="10px">
+        <tr>
+            <td colspan="3" width="100%" height="80px" style="background-color: white">
+                <div class="center">
+                    <img src="image/LOGO.jpg" width="80" height="80px">
+                    <h1>Klay-博客</h1>
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td width="80px" height="100%" style="background-color: #e2e2e2" valign="top">
+                <div id="leftmune" >
+
+                    <ol style="display: block">
+                        <li style="line-height: 30px"><a href="#zsd-a01">h1-h6标题</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a02">p分段与br换行</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a03">a链接</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a04">鼠标悬停显示文字</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a05">原样输出html代码</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a06">img图片加超链接+水平居中</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a07">body网页</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a08">HTML格式化</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a09">HTML样式</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a10">table表格</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a11">列表的使用</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a12">HTML块</a></li>
+                        <li style="line-height: 30px"><a href="#zsd-a13">布局</a></li>
+                    </ol>
+                </div>
+
+                <div id="leftgg" >
+                    <img src="imae/LOGO.jpg" width="100px" height="100px"alt="广告招租">
+                </div>
+
+            </td>
+            <td height="100%"style="background-color: white" >
+                <div id="rightbody">
+                    <div id="bodystyle01">
+                        <!--h1-h6标题】-->
+                        <p>---------------------------------------------------------------------</p>
+                        <p><font size="3" color="#5f9ea0" >
+                            <b>&& <a name="zsd-a01">知识点 1</a> - <font color="#d2691e">【h1-h6标题】</font></b>
+                            <font size="2"> (h1-h6标题大小逐渐变小) </font>
+                        </font></p>
+                        <h1 title="属性align:默认居左">标题h1</h1>
+                        <h2 title="属性align:right居右" align="right">标题h2</h2>
+                        <h3 title="属性align:center居中" align="center">标题h3</h3>
+                        <h4 title="当然还有居上居下">标题h4</h4>
+                        <h5>标题h5</h5>
+                        <h6>标题h6</h6>
+                    </div>
+
+                    <div id="bodystyle02">
+                        <!--p分段-->
+                        <p>---------------------------------------------------------------------</p>
+                        <p><font size="3" color="#5f9ea0"><b>&& <a name="zsd-a02">知识点 2</a> - <font color="#d2691e">【p分段与br换行】</font></b></font></p>
+                        <div title="分段与换行间距不一样">
+                            <p>hello</p>
+                            world!!<br/>
+                            hello
+                        </div>
+                    </div>
+
+                    <div id="bodystyle03">
+                        <!--a链接-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a03">知识点 3</a> - <font color="#d2691e">【a链接】</font></b></font>
+                        <div title="点击跳转">
+                            <p><a href="http://www.baidu.com">百度一下</a></p>
+                        </div>
+
+                        <a href="http://www.baidu.com"  target="_blank" title="属性一：blank为新页面，self为默认覆盖父页面">链接跳转类型</a>  <!--blank为新页面，parent为父页面-->
+
+                        <a href="zsd3-sx2.html" target="_blank" title="属性二：打开本地链接">打开本地链接</a>    <!--打开本地链接-->
+
+                        <br/>
+                        <a title="属性三：name跳转到文字" name="tips">我是文字</a>
+                        <a title="属性三：name跳转到文字"href="#tips">点击跳转到文字</a>                              <!--跳转到文字-->
+                        <a title="属性三：name跳转到文字"href="#zsd8">点击跳转到知识点8</a>
+                    </div>
+
+                    <div id="bodystyle01">
+                        <!--鼠标悬停显示文字-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a04">知识点 4</a> - <font color="#d2691e">【鼠标悬停显示文字】</font></b></font><br/><br/>
+                        <div title="全部内容">悬停显示文字</div>
+                    </div>
+
+                    <div id="bodystyle02">
+                        <!--html原样输出html代码-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a05">知识点 5</a> - <font color="#d2691e">【原样输出html代码】</font></b></font>
+                        <xmp><div title="全部内容">悬停显示文字</div></xmp>
+                    </div>
+
+                    <div id="bodystyle03">
+                        <!--img图片加超链接+水平居中-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a06">知识点 6</a> - <font color="#d2691e">【img图片加超链接+水平居中】</font></b></font><br/><br/>
+                        <div class="center">
+                            <a href="http://www.baidu.com">
+                                <p><div title="点击跳转">                           <!--border为边框宽度,alt为图片说明-->
+                                <img  title="border为边框宽度,alt为图片说明" border="1" src="image/LOGO.jpg" alt="示范素材" height="100px" width="100px"/>
+                            </div>点击跳转</p></a>
+                        </div>
+                    </div>
+
+                    <div id="bodystyle01">
+                        <!--body网页背景颜色-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a07">知识点 7</a> - <font color="#d2691e">【body网页】</font></b></font>
+                        <div>
+                            <font title="属性一：bgcolor设置纯色背景"><xmp><body bgcolor="#f5f5dc"></xmp></font>
+                            <font title="属性一：background图片背景"><xmp><body background="image/LOGO.jpg" ></xmp></font>
+                        </div>
+                    </div>
+
+                    <div id="bodystyle02">
+                        <!--HTML格式化-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a08">知识点 8</a> - <font color="#d2691e">【HTML格式化】</font></b></font><br/><br/>
+                        <a name="zsd8"></a>
+                        <b title="b加粗">欢迎来到我的笔记</b><br/>
+                        <big title="big加大">欢迎来到我的笔记</big><br/>
+                        <em title="em着重文字">欢迎来到我的笔记</em><br/>
+                        <i title="i斜体">欢迎来到我的笔记</i><br/>
+                        <small title="small小号">欢迎来到我的笔记</small><br/>
+                        <strong title="strong加重语气">欢迎来到我的笔记</strong><br/>
+                        欢迎来到<sub title="sub下标">我的</sub>笔记<br/>
+                        欢迎来到<sup title="sup上标">我的</sup>笔记<br/>
+                        欢迎来到<ins title="ins插入">我的</ins>笔记<br/>
+                        欢迎来到<del title="del删除">我的</del>笔记<br/>
+                    </div>
+
+                    <div id="bodystyle03">
+                        <!--HTML样式-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a09">知识点 9</a> - <font color="#d2691e">【HTML样式】</font></b></font><br/>
+                        <h5 title="外部样式表">欢迎来到我的笔记</h5>
+                        <p title="内部样式表">欢迎来到我的笔记</p>
+                        <p title="内联样式表" style="color: cornflowerblue" >欢迎来到我的笔记</p>                          <!--内部样式3：内联样式表-->
+
+                    </div>
+
+                    <div id="bodystyle01">
+                        <!--table表格-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a10">知识点 10</a> - <font color="#d2691e">【table表格】</font></b></font><br/>
+                        <br/>
+                        <table border="10">
+                            <caption title="caption定义表格标题"><b>表格标题</b></caption>     <!--caption定义表格标题-->
+                            <thead title="thead定义表格页眉">表格页眉</thead>                  <!--thead定义表格页眉-->
+                            <tbody title="tbody定义表格主体">表格主体</tbody>                  <!--tbody定义表格主体-->
+                            <tfoot title="tfoot定义表格页脚">表格页脚</tfoot>                 <!-- tfoot定义表格页脚-->
+                            <tr title="tr定义行，th定义标题">                            <!--tr定义表格行row-->
+                                <th>表头1</th>
+                                <th>表头2</th>                                          <!--th定义表头header-->
+                                <th>表头3</th>
+                                <th>表头4</th>
+                                <th>表头5</th>
+                            </tr>
+                            <tr title="td定义内容">
+                                <td>单元格1</td>                                           <!-- td定义表格内容detial-->
+                                <td>单元格2</td>
+                                <td>单元格3</td>
+                                <td>单元格4</td>
+                                <td title="ul定义表格内的标签，li定义列表">
+                                    <ul>                                                   <!--ul定义表格内的标签-->
+                                        <li>苹果</li>
+                                        <li>香蕉</li>                                        <!--li定义列表-->
+                                        <li>菠萝</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>单元格1</td>
+                                <td></td>
+                                <td></td>                                                     <!--空输入-->
+                                <td>单元格4</td>
+                            </tr>
+                            <tr>
+                                <td>单元格1</td>
+                                <td>单元格2</td>
+                                <td>单元格3</td>
+                                <td>单元格4</td>
+                            </tr>
+                        </table>
+                        <br/>
+
+                        <table title="cellpadding定义边距，bgcolor定义纯色背景" cellpadding="10" border="10"bgcolor="#5f9ea0">
+                            <tr>                                                        <!--cellpadding定义边距,bgcolor定义纯色背景-->
+                                <td>单元格1</td>
+                                <td>单元格2</td>
+                                <td>单元格3</td>
+                            </tr>
+                            <tr>
+                                <td>单元格1</td>
+                                <td>单元格2</td>
+                                <td>单元格3</td>
+                            </tr>
+                        </table>
+                        <br/>
+
+                        <table title="cellspacing定义间距，background定义背景图片" cellspacing="10"cellpadding="10" border="10" background="image/LOGO2.png">
+                            <tr>                                                       <!-- cellspacing定义间距，background定义背景图片-->
+                                <td>单元格1</td>
+                                <td>单元格2</td>
+                                <td>单元格3</td>
+                            </tr>
+                            <tr>
+                                <td>单元格1</td>
+                                <td>单元格2</td>
+                                <td>单元格3</td>
+                        </table>
+                    </div>
+
+                    <div id="bodystyle02">
+                        <!--列表的使用-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a11">知识点 11</a> - <font color="#d2691e">【列表的使用】</font></b></font><br/><br/>
+                        <table title="ul无序列表的属性" border="10" cellpadding="10">
+                            <tr>
+                                <td>
+                                    <ul title="disc实体圆" type="disc">                      <!--disc定义实体圆实体圆-->
+                                        <li>苹果</li>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul title="circle空心圆" type="circle">                       <!--circle定义空心圆-->
+                                        <li>苹果</li>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul title="square矩形" type="square">                           <!--square定义矩形-->
+                                        <li>苹果</li>
+                                        <ul title="嵌套列表">
+                                            <li>甜的</li>
+                                            <li>酸的</li>
+                                        </ul>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+
+                        <table title="ol有序列表属性" cellpadding="10" border="10">
+                            <tr>
+                                <td>
+                                    <ol title="默认显示数字，start定义从几开始" start="3">
+                                        <li>苹果</li>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol title="style用A表示" type="A" start="3">                   <!--style选择类型，start从几开始-->
+                                        <li>苹果</li>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol title="style用a表示" type="a" start="3">
+                                        <li>苹果</li>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol title="style用I表示" type="I" start="3">
+                                        <li>苹果</li>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <ol title="style用i表示" type="i" start="3">
+                                        <li>苹果</li>
+                                        <ol title="嵌套列表">
+                                            <li>甜的</li>
+                                            <li>酸的</li>
+                                        </ol>
+                                        <li>香蕉</li>
+                                        <li>橘子</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+
+                        <table border="10" cellpadding="10">
+                            <tr title="dl为自定义列表">
+                                <td>
+                                    <dl>
+                                        <dt title="dt为标题">苹果</dt>
+                                        <dd title="dd为说明">苹果可能是甜的，也可能是酸的</dd>
+                                        <dt>苹果</dt>
+                                        <dd>苹果可能是甜的，也可能是酸的</dd>
+                                    </dl>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="bodystyle03">
+                        <!--HTML块-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a12">知识点 12</a> - <font color="#d2691e">【HTML块】</font></b></font><br/>
+                        <div id="zsd12id" title="块一：div是没有定义的容器">         <!--div是没有定义的容器-->
+                            <p>我是彩色的</p>                           <!--在mycss中只定义p-->
+                            <a>我不可以是彩色的</a>
+                        </div>
+
+                        <div id="zsd12id-2">
+                            <p><span title="块二：span是文本容器">测试文字</span>测试文字</p>           <!--span是文本容器-->
+                        </div>
+                    </div>
+
+                    <div id="bodystyle01">
+                        <!--布局-->
+                        <p>---------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a13">知识点 13</a> - <font color="#d2691e">【布局】</font></b></font><br/><br/>
+                        <table  title="布局一：采用table方式" width="100%" height="200px" style="background-color: #fcf6ff">
+                            <tr title="使用colspan来合并">
+                                <td  colspan="2" width="100%" height="10%" style="background-color: cadetblue">头部菜单</td>
+                            </tr>
+                            <tr>
+                                <td width="30%" height="80%" style="background-color: chocolate">
+                                    <ul id="zsd13ulid">
+                                        <li>知识点1</li>
+                                        <li>知识点2</li>
+                                        <li>知识点3</li>
+                                        <li>知识点4</li>
+                                    </ul>
+                                </td>
+                                <td width="70%" height="80%" style="background-color: coral">主体内容</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" width="100%" height="10%" style="background-color: lightslategrey">底部页脚</td>
+                            </tr>
+                        </table>
+                        <br/>
+
+                        <div title="采用div方式" id="zsd13divbj-container-id">
+                            <div id="zsd13divbj-header-id">头部菜单</div>
+                            <div id="zsd13divbj-leftmune-id">左部菜单</div>
+                            <div id="zsd13divbj-body-id">主体内容</div>
+                            <div id="zsd13divbj-footer-id">地步页脚</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--表单-->
+                        <p>---------------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a14">知识点 14</a> - <font title="form" color="#d2691e">【表单】</font></b></font><br/><br/>
+                        <form>
+                            <p><span style="display: inline-block;width: 40%;text-align: right">用户名：</span><input title="style-1:text文本" style="text"></p>
+                            <p><span style="display: inline-block;width: 40%;text-align: right">密码：</span><input title="style-2:password密码" style="password"></p>
+                            <p>
+                                <span style="display:inline-block; width: 40%;text-align: right">
+                                    请选出你喜欢的水果：
+                                </span>
+                                苹果<input title="type-3:checkbox复选框" type="checkbox">
+                                菠萝<input title="type-3:checkbox复选框"type="checkbox">
+                                香蕉<input title="type-3:checkbox复选框"type="checkbox">
+                            </p>
+                            <p>
+                                <span style="display: inline-block;width: 40%;text-align: right">性别：</span>
+                            男<input title="type-4:radio单选，需要设置同样的name" type="radio" name="sex">
+                            女<input title="type-4:radio单选，需要设置同样的name" type="radio" name="sex">
+                            </p>
+                            <p>
+                                <span style="display: inline-block;width: 40%;text-align: right">年级：</span>
+                                <select title="select下拉选框">
+                                    <option title="option下拉选框内容">大一</option>
+                                    <option title="option下拉选框内容">大二</option>
+                                    <option title="option下拉选框内容">大三</option>
+                                    <option title="option下拉选框内容">大四</option>
+                                </select>
+                            </p>
+                            <p>
+                                <span style="display: inline-block;width: 40%;text-align: right;float: left">个人介绍：</span>
+                                <textarea title="textarea文字域，宽为cols，高为rows" cols="30" rows="5">填写个人介绍（不低于50字）</textarea>
+                            </p>
+                            <p>
+                                <span style="width: 40%;text-align: right;float: left">点击提交：</span>
+                                <input title="type-5:button普通按钮,文字为value" type="button" value="按钮">
+                                <input title="type-6:submit提交按钮,文字为value" type="submit" value="确认">
+                            </p>
+                        </form>
+                    </div>
+
+                    <div>
+
+                        <p>---------------------------------------------------------------------------</p>
+                        <font size="3" color="#5f9ea0"><b>&& <a name="zsd-a15">知识点 15</a> - <font title="form" color="#d2691e">【表单】</font></b></font><br/><br/>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </td>
+
+            <!--右菜单-->
+            <td width="80px" height="100%" style="background-color: rgba(95,158,160,0.71)">
+
+            </td>
+        </tr>
+
+        <!--底部页脚-->
+        <tr>
+            <td colspan="3" width="100" height="150px" style="background-color: #343a35">
+                <div id="footer">
+                    <h3 align="center">欢迎有兴趣的小伙伴加入一起学习!!</h3>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
